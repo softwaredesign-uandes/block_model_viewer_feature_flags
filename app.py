@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 def feature_flags():
   feature_flags = {
       "restful_response": True,
-      "block_info": False,
+      "block_info": True,
   }
   return jsonify(feature_flags)
 
