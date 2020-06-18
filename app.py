@@ -6,8 +6,8 @@ app = flask.Flask(__name__)
 @app.route('/api/feature_flags/', methods=['GET'])
 def feature_flags():
   feature_flags = {
-      "restful_response": True,
-      "block_info": True,
+      "restful_response": False,
+      "block_info": False,
   }
   return jsonify(feature_flags)
 
